@@ -13,6 +13,10 @@
 		32BC2EBA25BE0B0F00B1DEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BC2EB925BE0B0F00B1DEDB /* Assets.xcassets */; };
 		32BC2EBD25BE0B0F00B1DEDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BC2EBC25BE0B0F00B1DEDB /* Preview Assets.xcassets */; };
 		32BC2EC025BE0B0F00B1DEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BC2EBE25BE0B0F00B1DEDB /* LaunchScreen.storyboard */; };
+		32ED460B25BE15BC00017726 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ED460A25BE15BC00017726 /* NetworkManager.swift */; };
+		32ED460F25BE179700017726 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ED460E25BE179700017726 /* PostData.swift */; };
+		32ED461825BE208800017726 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ED461725BE208800017726 /* DetailView.swift */; };
+		32ED461B25BE24C000017726 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ED461A25BE24C000017726 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		32BC2EBC25BE0B0F00B1DEDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32BC2EBF25BE0B0F00B1DEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32BC2EC125BE0B0F00B1DEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32ED460A25BE15BC00017726 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		32ED460E25BE179700017726 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		32ED461725BE208800017726 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		32ED461A25BE24C000017726 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		32BC2EB225BE0B0C00B1DEDB /* HackerNewsSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				32ED461125BE202000017726 /* View */,
+				32ED460925BE15A400017726 /* Models */,
 				32BC2EB325BE0B0C00B1DEDB /* AppDelegate.swift */,
 				32BC2EB525BE0B0C00B1DEDB /* SceneDelegate.swift */,
-				32BC2EB725BE0B0C00B1DEDB /* ContentView.swift */,
 				32BC2EB925BE0B0F00B1DEDB /* Assets.xcassets */,
 				32BC2EBE25BE0B0F00B1DEDB /* LaunchScreen.storyboard */,
 				32BC2EC125BE0B0F00B1DEDB /* Info.plist */,
@@ -73,6 +82,25 @@
 				32BC2EBC25BE0B0F00B1DEDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32ED460925BE15A400017726 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32ED460A25BE15BC00017726 /* NetworkManager.swift */,
+				32ED460E25BE179700017726 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32ED461125BE202000017726 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32BC2EB725BE0B0C00B1DEDB /* ContentView.swift */,
+				32ED461725BE208800017726 /* DetailView.swift */,
+				32ED461A25BE24C000017726 /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32ED460F25BE179700017726 /* PostData.swift in Sources */,
+				32ED461825BE208800017726 /* DetailView.swift in Sources */,
+				32ED460B25BE15BC00017726 /* NetworkManager.swift in Sources */,
 				32BC2EB425BE0B0C00B1DEDB /* AppDelegate.swift in Sources */,
 				32BC2EB625BE0B0C00B1DEDB /* SceneDelegate.swift in Sources */,
 				32BC2EB825BE0B0C00B1DEDB /* ContentView.swift in Sources */,
+				32ED461B25BE24C000017726 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
